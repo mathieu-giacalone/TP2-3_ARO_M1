@@ -12,8 +12,20 @@ public class Item {
         return (double) value / weight;
     }// ratio()
 
+    public int getValue() {
+        return value;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
     @Override
     public String toString() {
-        return "" + ratio();
+        return "Item{" +
+                "value=" + value +
+                ", weight=" + weight +
+                ", ratio=" + ratio() +
+                '}';
     }
 }
